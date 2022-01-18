@@ -108,6 +108,8 @@ padding: 0px;
 padding: 32px;
 margin-top: 5rem;
 margin-left: 1.5rem;
+min-height: 6rem;
+width: 256px;
 outline: none;
 overflow: hidden;
 
@@ -131,7 +133,7 @@ border-radius: 32px;
     border: 2px solid #0A3871;
     background-color: #F3F5FC;
     box-sizing: border-box;
-    border-radius: 10px;
+    border-radius: 50%;
     
 
     font-weight: 500;
