@@ -128,12 +128,13 @@ border-radius: 32px;
     height: auto;
     margin-left: 1.5rem;
     margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     
     /* Dark blue/dark-blue-300 */
     border: 2px solid #0A3871;
-    background-color: #F3F5FC;
+    background-color: #0A3871;
     box-sizing: border-box;
-    border-radius: 50%;
+    border-radius: 24px;
     
 
     font-weight: 500;
@@ -141,5 +142,5 @@ border-radius: 32px;
 
     #copy img {
         width: 30px;
-        filter: invert(20%) sepia(74%) saturate(1133%) hue-rotate(179deg) brightness(88%) contrast(97%);
+        filter: invert(100%) sepia(9%) saturate(3938%) hue-rotate(179deg) brightness(100%) contrast(98%);
     }
