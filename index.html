@@ -4,16 +4,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Encrypt</title>
+  <title>encrypt.all</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h3>Encrypt</h3>
+  <header id="head">
+    <img src="./Vector.svg" />
   </header>
   <main>
-      <textarea id="campo-texto"></textarea>
+      <textarea id="campo-texto" placeholder="Digite seu texto"></textarea>
+      <label id="warning">
+        <img src="./Warning.svg" alt="">
+        Apenas letras minúsculas e sem acento.
+      </label>
+      <div class="buttons">
       <button id="encryptButton">Criptografar</button>
       <button id="decryptButton">Descriptografar</button>
+      </div>
     <label>
       <textarea id="result"></textarea>
       <button id="copy">Copiar</button>
