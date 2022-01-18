@@ -21,6 +21,7 @@ body {
     margin-top: 1.5rem;
     margin-left: 1.5rem;
     width: 20rem;
+    min-height: 20rem;
     height: auto;
     font-size: xx-large;
     font-family: 'Inter', sans-serif;
@@ -107,6 +108,8 @@ padding: 0px;
 padding: 32px;
 margin-top: 5rem;
 margin-left: 1.5rem;
+outline: none;
+overflow: hidden;
 
 /* White */
 background: #FFFFFF;
