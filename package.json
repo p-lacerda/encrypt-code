@@ -1,0 +1,20 @@
+{
+  "name": "challenge-oracle-one",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/p-lacerda/Challenge-Oracle-One.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/p-lacerda/Challenge-Oracle-One/issues"
+  },
+  "homepage": "https://github.com/p-lacerda/Challenge-Oracle-One#readme"
+}
