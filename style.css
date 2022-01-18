@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    background-color: #F3F5FC;
+    font-family: 'Inter', sans-serif;
+    }
+
+#head {
+    margin: 1.5rem;
+}
+
+#campo-texto {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: 20rem;
+    height: auto;
+    font-size: xx-large;
+    font-family: 'Inter', sans-serif;
+    color: rgba(10, 56, 113, 1);
+    outline: none;
+    overflow: hidden;
+}
+
+#warning {
+    display: inline-block;
+    margin-top: 1.5rem;
+    font-size: smaller;
+    margin-left: 1.5rem;
+
+}
+
+#warning img {
+    vertical-align: middle;
+    margin-right: .3rem;
+
+}
+
+#encryptButton {
+    padding: 24px;
+
+    position: static;
+    width: 343px;
+    height: 67px;
+
+    /* Dark blue/dark-blue-300 */
+    background: #0A3871;
+    color: #F3F5FC;
+    border-radius: 24px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    margin: 24px 0px;
+
+    font-weight: 500;
+    text-align: center;
+}
+
+#decryptButton {
+/* Button */
+
+/* Auto layout */
+
+padding: 24px;
+
+position: static;
+width: 343px;
+height: 67px;
+left: 0px;
+top: 91px;
+
+/* Dark blue/dark-blue-300 */
+border: 1px solid #0A3871;
+color: #0A3871;
+box-sizing: border-box;
+border-radius: 24px;
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+font-weight: 500;
+
+}
+
+.buttons {
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+position: absolute;
+left: 16px;
+}

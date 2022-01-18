@@ -1,9 +1,11 @@
 const inputTexto = document.querySelector('#campo-texto');
 const inputResultado = document.querySelector('#result');
 const decryptButton = document.querySelector('#decryptButton');
+const copyButton = document.querySelector('#copy');
 const encryptButton = document.querySelector('#encryptButton');
 encryptButton.addEventListener('click', clickEncrypt);
 decryptButton.addEventListener('click', clickDecrypt);
+copyButton.addEventListener('click', clickCopy);
 
 let chars = {
   'a': 'ai',
@@ -51,3 +53,8 @@ let invertedChars = {
     inputTexto.value = '';
   }
   
+  function clickCopy () {
+    inputResultado.select();
+    inputResultado.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(inputResultado.value);
+  }
