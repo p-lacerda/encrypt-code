@@ -6,9 +6,12 @@
     vertical-align:baseline;
     list-style:none;
     border:0;
-    background-color: #F3F5FC;
     font-family: 'Inter', sans-serif;
     }
+
+body {
+    background-color: #F3F5FC;
+}
 
 #head {
     margin: 1.5rem;
@@ -22,6 +25,7 @@
     font-size: xx-large;
     font-family: 'Inter', sans-serif;
     color: rgba(10, 56, 113, 1);
+    background-color: #F3F5FC;
     outline: none;
     overflow: hidden;
 }
@@ -44,7 +48,7 @@
     padding: 24px;
 
     position: static;
-    width: 343px;
+    width: 100%;
     height: 67px;
 
     /* Dark blue/dark-blue-300 */
@@ -63,14 +67,11 @@
 }
 
 #decryptButton {
-/* Button */
-
 /* Auto layout */
 
 padding: 24px;
-
 position: static;
-width: 343px;
+width: 100%;
 height: 67px;
 left: 0px;
 top: 91px;
@@ -78,6 +79,7 @@ top: 91px;
 /* Dark blue/dark-blue-300 */
 border: 1px solid #0A3871;
 color: #0A3871;
+background-color: #F3F5FC;
 box-sizing: border-box;
 border-radius: 24px;
 
@@ -92,34 +94,47 @@ font-weight: 500;
 
 .buttons {
 /* Auto layout */
-display: flex;
+display: inline-block;
+margin-left: 1.5rem;
+width: 20rem;
 flex-direction: column;
-align-items: flex-start;
+text-align: center;
+vertical-align: middle;
 padding: 0px;
-left: 16px;
+}
+
+#result {
+padding: 32px;
+margin-top: 5rem;
+margin-left: 1.5rem;
+
+/* White */
+background: #FFFFFF;
+
+box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+border-radius: 32px;
 }
 
 #copy {
 
-/* Auto layout */
+    /* Auto layout */
+    
+    padding: 10px;
+    height: auto;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+    
+    /* Dark blue/dark-blue-300 */
+    border: 2px solid #0A3871;
+    background-color: #F3F5FC;
+    box-sizing: border-box;
+    border-radius: 10px;
+    
 
-padding: 24px;
+    font-weight: 500;
+    }
 
-position: static;
-height: 67px;
-left: 0px;
-top: 91px;
-
-/* Dark blue/dark-blue-300 */
-border: 1px solid #0A3871;
-color: #0A3871;
-box-sizing: border-box;
-border-radius: 24px;
-
-/* Inside auto layout */
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-font-weight: 500;
-}
+    #copy img {
+        width: 30px;
+        filter: invert(20%) sepia(74%) saturate(1133%) hue-rotate(179deg) brightness(88%) contrast(97%);
+    }
