@@ -39,11 +39,15 @@ let invertedChars = {
   }
 
   function clickDecrypt () {
-    inputResultado.value = decrypt(inputTexto.value);
+    const saveInput = inputTexto.value;
+    inputResultado.value = decrypt(saveInput);
+    inputTexto.value = '';
   }
 
 
   function clickEncrypt () {
-    inputResultado.value = encrypt(inputTexto.value);
+    const saveInput = inputTexto.value;
+    inputResultado.value = encrypt(saveInput);
+    inputTexto.value = '';
   }
   
