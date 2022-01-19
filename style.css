@@ -11,16 +11,25 @@
 
 body {
     background-color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
 }
 
 #head {
     margin: 1.5rem;
 }
 
+main {  
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
 #campo-texto {
     margin-top: 1.5rem;
-    margin-left: 1.5rem;
-    width: 20rem;
+    /* margin-left: 1.5rem; */
+    max-width: auto;
     min-height: 20rem;
     height: auto;
     font-size: xx-large;
@@ -38,7 +47,7 @@ body {
     display: inline-block;
     margin-top: 1.5rem;
     font-size: smaller;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
 
 }
 
@@ -117,8 +126,8 @@ font-weight: 500;
 .buttons {
 /* Auto layout */
 display: inline-block;
-margin-left: 1.5rem;
-width: 20rem;
+/* margin-left: 1.5rem; */
+width: auto;
 flex-direction: column;
 text-align: center;
 vertical-align: middle;
@@ -127,10 +136,9 @@ padding: 0px;
 
 #result {
 padding: 32px;
+max-width: auto;
 margin-top: 5rem;
-margin-left: 1.5rem;
 min-height: 6rem;
-width: 256px;
 outline: none;
 overflow: hidden;
 
@@ -139,10 +147,6 @@ background: #FFFFFF;
 
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border-radius: 32px;
-}
-
-.bottom {
-    margin-left: 1.5rem;
 }
 
 .button-bottom {
