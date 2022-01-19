@@ -28,8 +28,11 @@ body {
     color: rgba(10, 56, 113, 1);
     background-color: #F3F5FC;
     outline: none;
-    overflow: hidden;
+    scrollbar-width: thin;          /* "auto" or "thin" */
+    scrollbar-color: #0A3871 #fff;   /* scroll thumb and track */
 }
+
+
 
 #warning {
     display: inline-block;
@@ -161,7 +164,7 @@ border-radius: 32px;
     
 
     font-weight: 500;
-    transition: all 100ms ease-out;
+    transition: all 100ms ease-in-out;
     }
 
     .button-bottom img {
