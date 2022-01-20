@@ -114,12 +114,13 @@ order: 1;
 align-self: stretch;
 flex-grow: 0; */
 font-weight: 500;
+transition: all 100ms ease-out;
+
 }
 
 #decryptButton:hover {
     background-color: #D8DFE8;
     border: 2px solid #D8DFE8;
-    transition: all 100ms ease-out;
 
     cursor: pointer;
 }
