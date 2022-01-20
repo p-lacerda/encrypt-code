@@ -48,6 +48,9 @@ let invertedChars = {
     let newPhrase = '';
   
     newPhrase = phrase.replace(/ai|enter|imes|ober|ufat/g, i => (invertedChars)[i]);
+
+    inputResultado.classList.remove('hidden');
+    divResultado.classList.add('hidden');
   
     return newPhrase;
   }
