@@ -75,5 +75,13 @@ let invertedChars = {
   }
 
   function clickShare () {
-    return navigator.share(inputResultado.value);
+    if (navigator.share !== undefined) {
+      navigator.share({
+        title: 'Encrypt One',
+        text: inputResultado.value,
+        url: 'https://paulodetasso.me/encrypt-oracle',
+      })
+      .then(() => console.log('Successful share'))
+      .catch((error) => console.log('Error sharing', error));
+    }
   }
