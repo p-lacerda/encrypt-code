@@ -117,11 +117,10 @@ font-weight: 500;
 }
 
 #decryptButton:hover {
-    background-color: #2c6ec0;
-    border: 2px solid #2c6ec0;
+    background-color: #D8DFE8;
+    border: 2px solid #D8DFE8;
     transition: all 100ms ease-out;
 
-    color: #FFFFFF;
     cursor: pointer;
 }
 
@@ -167,7 +166,7 @@ align-items: center;
 }
 
 .hidden {
-  display: block;
+  display: none;
 }
 
 .result::placeholder {

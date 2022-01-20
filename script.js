@@ -3,10 +3,12 @@ const inputResultado = document.querySelector('#textresult');
 const divResultado = document.querySelector('#resultdiv');
 const decryptButton = document.querySelector('#decryptButton');
 const copyButton = document.querySelector('#copy');
+const shareButton = document.querySelector('#share');
 const encryptButton = document.querySelector('#encryptButton');
 encryptButton.addEventListener('click', clickEncrypt);
 decryptButton.addEventListener('click', clickDecrypt);
 copyButton.addEventListener('click', clickCopy);
+shareButton.addEventListener('click', clickShare);
 
 let chars = {
   'a': 'ai',
@@ -25,10 +27,8 @@ let invertedChars = {
   }
   
   if (inputResultado.value.length >= 1) {
-    if (!divResultado.contains('noMobile')) {
-      divResultado.classList.add('hidden');
-    }
     inputResultado.classList.remove('hidden');
+    divResultado.classList.add('hidden');
   }
 
 
@@ -37,11 +37,8 @@ let invertedChars = {
   
     newPhrase = phrase.replace(/[aeiou]/g, i => (chars)[i]);
 
-    if (!divResultado.classList.contains('noMobile')) {
-      divResultado.classList.add('hidden')
-    }
-
     inputResultado.classList.remove('hidden');
+    divResultado.classList.add('hidden');
   
     return newPhrase;
   }
@@ -72,4 +69,8 @@ let invertedChars = {
     inputResultado.select();
     inputResultado.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(inputResultado.value);
+  }
+
+  function clickShare () {
+    return navigator.share(inputResultado.value);
   }
