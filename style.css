@@ -161,6 +161,15 @@ align-items: center;
 
 }
 
+#resultdiv {
+  justify-content: center;
+  text-align: center;
+}
+
+#resultdiv p {
+  margin-top: 10px;
+}
+
 .noMobile {
   display: none;
 }
