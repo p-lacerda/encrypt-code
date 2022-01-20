@@ -272,9 +272,7 @@ align-items: center;
         margin-top: 5rem;
         border-style: solid;
         resize: vertical;
-        padding: 25px;
-        border-radius: 10px;
-        border: 1px rgb(206, 212, 218) solid;
+        padding: 25px 25px 25px 0px;
       }
 
       #warning {
@@ -390,8 +388,6 @@ align-items: center;
         border-style: solid;
         resize: vertical;
         padding: 25px;
-        border-radius: 10px;
-        border: 1px rgb(206, 212, 218) solid;
       }
 
       #warning {
