@@ -192,7 +192,8 @@ align-items: center;
     /* Auto layout */
     
     padding: 10px 10px 10px 10px;
-    height: auto;
+    height: 67px;
+    width: 100%;
     margin-right: .5rem;
     
     /* Dark blue/dark-blue-300 */
@@ -247,7 +248,7 @@ align-items: center;
     @media screen and (min-width: 768px) {
       #content {
         padding: 1.25rem;
-        max-width: 768px;
+        /* max-width: 768px; */
         margin-left: auto;
         margin-right: auto;
         /* display: flex;
@@ -259,7 +260,7 @@ align-items: center;
     @media screen and (min-width: 1024px) {
       #content {
         padding: 1.25rem;
-        max-width: 1024px;
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
         /* display: flex;
@@ -376,7 +377,7 @@ align-items: center;
 
         .button-bottom {
           height: 67px;
-          width: 128px;
+          width: 100%;
         }
     }
 

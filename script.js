@@ -3,12 +3,10 @@ const inputResultado = document.querySelector('#textresult');
 const divResultado = document.querySelector('#resultdiv');
 const decryptButton = document.querySelector('#decryptButton');
 const copyButton = document.querySelector('#copy');
-const shareButton = document.querySelector('#share');
 const encryptButton = document.querySelector('#encryptButton');
 encryptButton.addEventListener('click', clickEncrypt);
 decryptButton.addEventListener('click', clickDecrypt);
 copyButton.addEventListener('click', clickCopy);
-shareButton.addEventListener('click', clickShare);
 
 let chars = {
   'a': 'ai',
@@ -72,16 +70,4 @@ let invertedChars = {
     inputResultado.select();
     inputResultado.setSelectionRange(0, 99999);
     navigator.clipboard.writeText(inputResultado.value);
-  }
-
-  function clickShare () {
-    if (navigator.share !== undefined) {
-      navigator.share({
-        title: 'Encrypt One',
-        text: inputResultado.value,
-        url: 'https://paulodetasso.me/encrypt-oracle',
-      })
-      .then(() => console.log('Successful share'))
-      .catch((error) => console.log('Error sharing', error));
-    }
   }
