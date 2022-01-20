@@ -1,5 +1,6 @@
 const inputTexto = document.querySelector('#campo-texto');
-const inputResultado = document.querySelector('#result');
+const inputResultado = document.querySelector('#textresult');
+const divResultado = document.querySelector('#resultdiv');
 const decryptButton = document.querySelector('#decryptButton');
 const copyButton = document.querySelector('#copy');
 const encryptButton = document.querySelector('#encryptButton');
@@ -23,10 +24,24 @@ let invertedChars = {
     'ufat': 'u'
   }
   
+  if (inputResultado.value.length >= 1) {
+    if (!divResultado.contains('noMobile')) {
+      divResultado.classList.add('hidden');
+    }
+    inputResultado.classList.remove('hidden');
+  }
+
+
   function encrypt(phrase) {
     let newPhrase = '';
   
     newPhrase = phrase.replace(/[aeiou]/g, i => (chars)[i]);
+
+    if (!divResultado.classList.contains('noMobile')) {
+      divResultado.classList.add('hidden')
+    }
+
+    inputResultado.classList.remove('hidden');
   
     return newPhrase;
   }

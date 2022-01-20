@@ -10,9 +10,15 @@
     }
 
 body {
-    background-color: #F3F5FC;
-    display: flex;
-    flex-direction: column;
+  background-color: #F3F5FC;
+  align-self: center;
+}
+
+#content {
+  padding: 1.25rem;
+  /* display: flex;
+  flex-direction: column; */
+  align-self: center;
 }
 
 #head {
@@ -20,10 +26,8 @@ body {
 }
 
 main {  
-  width: 90%;
   display: flex;
   flex-direction: column;
-  align-self: center;
 }
 
 #campo-texto {
@@ -40,8 +44,6 @@ main {
     scrollbar-width: thin;          /* "auto" or "thin" */
     scrollbar-color: #0A3871 #fff;   /* scroll thumb and track */
 }
-
-
 
 #warning {
     display: inline-block;
@@ -134,7 +136,16 @@ vertical-align: middle;
 padding: 0px;
 }
 
-#result {
+bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
 padding: 32px;
 max-width: auto;
 margin-top: 5rem;
@@ -147,9 +158,19 @@ background: #FFFFFF;
 
 box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
 border-radius: 32px;
+align-items: center;
+
 }
 
-#result::placeholder {
+.noMobile {
+  display: none;
+}
+
+.hidden {
+  display: block;
+}
+
+.result::placeholder {
     text-align: center;
 }
 
@@ -185,4 +206,245 @@ border-radius: 32px;
         background-color: #2c6ec0;
         border: 2px solid #2c6ec0;
         cursor: pointer;
+    }
+
+    @media screen and (min-width: 640px) {
+      #content {
+        padding: 1.25rem;
+        max-width: 640px;
+        /* display: flex;
+        flex-direction: column; */
+        align-self: center;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      #content {
+        padding: 1.25rem;
+        max-width: 768px;
+        /* display: flex;
+        flex-direction: column; */
+        align-self: center;
+      }
+    }
+
+    @media screen and (min-width: 1024px) {
+      #content {
+        padding: 1.25rem;
+        max-width: 1024px;
+        margin-left: auto;
+        margin-right: auto;
+        /* display: flex;
+        flex-direction: column; */
+      }
+    }
+
+    @media (min-width:1280px) {
+      #content {
+        padding: 1.25rem;
+        max-width: 1280px;
+        display: flex;
+        flex-direction: row;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #head {
+        margin: 0 0 0 0;
+      }
+
+      header img {
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      body {
+        display: flex;
+        flex-direction: row;
+      }
+
+      main {
+        margin-top: 2rem;
+        margin-right: 2rem;
+      }
+
+      #campo-texto {
+        min-height: 26.8rem;
+        margin-top: 5rem;
+        border-style: solid;
+        resize: vertical;
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px rgb(206, 212, 218) solid;
+      }
+
+      #warning {
+        margin-bottom: 1rem;
+      }
+
+      .result {
+        padding: 32px;
+        min-width: auto;
+        min-height: 561px;
+        margin-top: 0;
+        outline: none;
+        overflow: hidden;
+        resize: vertical;
+        
+        /* White */
+        background: #FFFFFF;
+        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        }
+
+        .hidden {
+          display: none;
+        }
+        
+        #resultdiv {
+          justify-content: center;
+          text-align: center;
+        }
+        
+        #resultdiv p {
+          margin-top: 10px;
+        }
+        
+        .noMobile {
+          display: flex;
+        }
+
+        .noMessage {
+          display: block;
+        }
+        
+        .result::placeholder {
+            text-align: center;
+        }
+
+      #encryptButton {
+          padding: 24px;
+          width: 328px;
+          height: 67px;
+          margin: 0 1rem 0 0;
+      }
+      
+      #decryptButton {
+        width: 328px;
+      }
+
+        .buttons {
+          display: flex;
+          width: auto;
+          flex-direction: row;
+          }
+
+        bottom {
+          display: flex;
+          margin-top: 0;
+          min-width: 25rem;
+          flex-direction: column;
+          min-height: auto;
+        }
+
+        .button-bottom {
+          height: 67px;
+          width: 128px;
+        }
+    }
+
+    @media screen and (min-width: 1536px) {
+      #content {
+        padding: 1.25rem;
+        max-width: 1536px;
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      
+      #head {
+        margin: 0 0 0 1.5;
+      }
+
+      header img {
+        margin-left: 1.5rem;
+        margin-top: 1.5rem;
+      }
+
+      body {
+        display: flex;
+        flex-direction: row;
+      }
+
+      main {
+        margin-top: 2rem;
+        margin-right: 2rem;
+        margin-left: 2rem;
+      }
+
+      #campo-texto {
+        min-height: 26.8rem;
+        margin-top: 5rem;
+        border-style: solid;
+        resize: vertical;
+        padding: 25px;
+        border-radius: 10px;
+        border: 1px rgb(206, 212, 218) solid;
+      }
+
+      #warning {
+        margin-bottom: 1rem;
+      }
+
+      .result {
+        padding: 32px;
+        min-width: auto;
+        min-height: 561px;
+        margin-top: 0;
+        outline: none;
+        overflow: hidden;
+        resize: vertical;
+        
+        /* White */
+        background: #FFFFFF;
+        
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 32px;
+        }
+
+        .result::placeholder {
+            text-align: center;
+        }
+
+      #encryptButton {
+          padding: 24px;
+          width: 328px;
+          height: 67px;
+          margin: 0 1rem 0 0;
+      }
+      
+      #decryptButton {
+        width: 328px;
+      }
+
+        .buttons {
+          display: flex;
+          width: auto;
+          flex-direction: row;
+          }
+
+        bottom {
+          display: flex;
+          margin-top: 0;
+          flex-direction: column;
+          min-height: auto;
+        }
+
+        .button-bottom {
+          height: 67px;
+          width: 128px;
+        }
     }
